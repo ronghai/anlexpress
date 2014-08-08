@@ -36,8 +36,8 @@ module ANLExpress
           dt = more.children[0].text.gsub("\u00A0", "").strip
           note = more.children[1].text.gsub("\u00A0", "").strip
           tra.add_status(DateTime.strptime(dt, '%Y-%m-%d %H:%M:%S'), note)
-          tra.carrier = self
         end
+        tra.carrier = self
         trackings.push(tra)
       end
       trackings
