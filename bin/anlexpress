@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
 require 'anlexpress'
 #(*ARGV)
-ANLExpress::TrackingStatus.create_statues(ANLExpress::ANLExpress.new, *ARGV){|x|puts x.to_yaml}
+ANLExpress::TrackingStatus.create_statues(ANLExpress::ANLExpress.new, *ARGV){|x,_|puts  x.to_yaml}

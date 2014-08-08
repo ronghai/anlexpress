@@ -17,10 +17,10 @@ Jeweler::Tasks.new do |gem|
   gem.name = "anlexpress"
   gem.homepage = "http://github.com/RONGHAI/anlexpress"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{A Gem for Tracking ANL Express}
+  gem.description = %Q{A Gem for Tracking ANL Express}
   gem.email = "ronghai.wei@outlook.com"
-  gem.authors = ["Ronghai Wei"]
+  gem.authors = ["RONGHAI"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new

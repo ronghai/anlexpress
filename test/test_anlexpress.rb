@@ -1,7 +1,5 @@
 require 'helper'
 
 class TestAnlexpress < Test::Unit::TestCase
-  should "probably rename this file and start testing for real" do
-    flunk "hey buddy, you should probably rename this file and start testing for real"
-  end
+  ANLExpress::TrackingStatus.create_statues(ANLExpress::ANLExpress.new, 80000025171,80000025172){|x|puts x.to_yaml}
 end

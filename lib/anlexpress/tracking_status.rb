@@ -43,8 +43,8 @@ module ANLExpress
       end
       if self != old_tracking
         File.open(file, 'w') { |file| file.write(self.to_yaml)}
-        yield self  if block_given?
       end
+      yield(self,self != old_tracking)  if block_given?
       @update = self != old_tracking
     end
     
