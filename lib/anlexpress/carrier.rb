@@ -3,8 +3,8 @@ require 'anlexpress/tracking_status'
 require 'net/http'
 require 'nokogiri'
 require 'date'
-PROXY_ADDR = '172.17.51.240'
-PROXY_PORT = 8080 
+PROXY_ADDR = nil #'172.17.51.240'
+PROXY_PORT =  nil#  8080 
 module ANLExpress
   class ANLExpress
     attr_reader :domain, :path, :code
